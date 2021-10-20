@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("fundo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+header {
+  background-image: url("natureza3.jpg");
+  background-size: cover;
+  background-color: rgb(0, 185, 93);
+}
+
+footer {
+  text-align: center;
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-texto {
+  margin-left: 500px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  text-align: right;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 400px;
+}
+
+nav ul li a {
+  padding: 10px;
+  display: inline-block;
+  color: rgb(26, 70, 6);
+  text-decoration: none;
+  border-bottom: 3px solid #ededed;
+}
+
+nav ul li a:hover {
+  color: #fdfdfd;
+  border-bottom: 3px solid rgb(0, 141, 82);
+}
+
+article {
+  text-align: center;
+  width: 100%;
+}
+
+h3 {
+  font-family: "Lucida Handwriting";
+}
+h1 {
+  font-family: "Lucida Handwriting";
+}
+
+p {
+  font-style: italic;
+}
+
+article > img {
+  width: 60%;
+}
+
+article img#foto2 {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  article img#foto1 {
+    display: none;
+  }
+
+  footer iframe {
+    display: none;
+  }
+
+  article img#foto2 {
+    display: inline;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+thead tr {
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+tbody tr:hover {
+  background-color: rgb(187, 240, 240);
+}
+
+tfoot {
+  background-color: rgb(34, 28, 28);
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.box {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 15px;
+  width: 20%;
+}
+
+fieldset {
+  border: 3px solid rgb(0, 185, 93);
+}
+
+legend {
+  border: 1px solid rgb(0, 185, 93);
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(0, 185, 93);
+  border-radius: 8px;
+  color: white;
+}
+
+.inputBox {
+  position: relative;
+}
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+  top: -20px;
+  font-size: 12px;
+  color: teal;
+}
+
+#submit {
+  background-image: linear-gradient(to right, rgb(0, 92, 19), rgb(20, 221, 64));
+  width: 100%;
+  border: none;
+  padding: 8px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#submit:hover {
+  background-image: linear-gradient(to right, rgb(0, 19, 4), rgb(63, 230, 104));
+}

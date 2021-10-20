@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <header>
+    <div class="container-logo">
+      <div class="logo-imagem"><img src="logo.png" alt="logo" width="250 height="180"></div>
+      <!-- <div class="logo-texto">
+        <h1>Pousada Recanto da Natureza</h1>
+      </div> -->
+    </div>
+  
+    <nav>
+      <ul class="nav-list">
+        <li> <a href="index.html">Inicio</a> </li>
+        <li> <a href="Hospedagens.html">Hospedagens</a> </li>
+        <li> <a href="Reservas.html">Reservas</a> </li>
+      </ul>
+    </nav>
+  
+  
+  </header>
+
+
+    <div class="box">
+      <form action="">
+        <fieldset>
+          <legend><b>Reservas</b></legend>
+          
+          <div class="inputBox">
+            <input type="text" name="nome" id="nome" class="inputUser" required>
+            <label for="nome" class="labelInput">Nome Completo</label>
+          </div>
+          <br><br>
+          <div class="inputBox">
+            <input type="email" name="email" id="email" class="inputUser" required>
+            <label for="email" class="labelInput">E-mail</label>
+          </div>
+          <br><br>
+          <div class="inputBox">
+            <input type="number" name="cpf" id="cpf" class="inputUser" required>
+            <label for="telefone" class="labelInput" >Telefone</label>
+          </div>
+          <br><br>
+          <div class="inputBox">
+            <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+            <label for="cpf" class="labelInput" >CPF</label>
+          </div>
+          <br><br>
+         
+            <label for="turno"><b> Opção de quarto: </b> </label>
+            <select id="turno">
+             <option value="1">Opção 1</option>
+             <option value="2">Opção 2</option>
+             <option value="3">Opção 3</option>
+            </select>
+            <br><br>
+            
+            <input type="submit" name="Reservar" id="submit">
+
+        </fieldset>
+      </form>
+    </div>
+
+</body>
+</html>
